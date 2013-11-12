@@ -13,6 +13,7 @@ diversas vezes refinado como nas ISO 9126, 12119, 9241, 14598 e, por fim, na ISO
 usuários específicos para alcançar metas específicas com eficácia, eficiência e
 satisfação em um contexto específico de uso~\cite{}.
 %TODO: colocar referência da ISO.
+
 %
 A usabilidade não é uma qualidade intrínseca de um sistema, é dependente de um
 acordo entre as características de sua interface e as características de seus
@@ -22,14 +23,15 @@ usuários na busca de determinados objetivos e situação de uso~\cite{}.
 Por esse motivo uma interface que pode ser considerada satisfatória para
 determinado grupo de usuários pode ser inviabilizada por outros, como usuários
 experientes \textit{versus} novatos, além de uma percepção diferente dependendo
-do ambiente onde esse sistema se encontra, um computador lento \texitt{versus}
+do ambiente onde esse sistema se encontra, um computador lento \textit{versus}
 computador rápido.
 %
 Dessa forma, podemos definir que a usabilidade é um acordo entre interface,
 usuário, tarefa e ambiente. Baseado nesta definição é que pautaremos nossas
 discussões e estudos de caso neste trabalho.
+
 %
-Dentro dessa necessidade de se garantir que sistemas e dispositivos estejam
+A necessidade de se garantir que sistemas e dispositivos estejam
 adaptados à maneira como o usuário pensa, comporta-se e trabalha, entra o
 conceito de ergonomia.
 %
@@ -37,6 +39,7 @@ Tal conceito surgiu logo após a II Guerra Mundial, como consequência do trabal
 interdisciplinar realizado por diversos profissionais, tais como engenheiros,
 fisiologistas e psicólogos, durante a guerra~\cite{}.
 %TODO: referenciar Lida, 2005
+
 %
 Há algumas definições formais para o termo ``ergonomia'', de acordo com a
 \textit{Ergonomics Society}, a Associação Brasileira de Ergonomia e a 
@@ -48,6 +51,7 @@ organização e o ambiente, objetivando intervenções e projetos que visem
 melhorar, de forma integrada e não-dissociada, a segurança, o conforto, o
 bem-estar e a eficácia das atividades humanas \cite{}.
 %TODO: referência para o texto da ABE.
+
 %
 Neste contexto, a questão que norteia este trabalho é como pode-se avaliar,
 entender, verificar, observar a interface de uma aplicação em determinado
@@ -129,7 +133,7 @@ propõe, o que ele denominou de ``oito regras de ouro'':
 
     \item Significado dos códigos;
 
-    \item Senominações e Compatibilidade.
+    \item Denominações e Compatibilidade.
 
     \end{itemize}
 
@@ -139,18 +143,143 @@ Portanto, baseado nas heurísticas e critérios listados acima,  Walter Cybis, n
 livro Ergonomia e Usabilidade, propôs uma tabela que relaciona todas essas
 definições, conforme aprensentado na Tabela \ref{tabela-walter-cybis}~\cite{}.
 %TODO: referência de  Walter Cybis
+\begin{table}[h]
+\begin{tabular}{|l|l|}
+\hline
+Condução                               & \begin{tabular}[c]{@{}c@{}}Qualidade da ajuda e da documentação\\ Adequação ao aprendizado\\ Apresentação do estado do sistema\\ Convite\\ Agrupamento e distinção por localização\\ Agrupamento e distinção por formato\\ Feedback imediato\end{tabular} \\ \hline
+Carga de trabalho                      & \begin{tabular}[c]{@{}c@{}}Legibilidade\\ Brevidade das entradas individuais\\ Concisão das apresentações individuais\\ Ações mínimas\\ Densidade informacional\\ Design minimalista e estético\end{tabular}                                              \\ \hline
+Controle                               & \begin{tabular}[c]{@{}c@{}}Ações explícitas\\ Controle do usuário\end{tabular}                                                                                                                                                                            \\ \hline
+Adaptabilidade                         & \begin{tabular}[c]{@{}c@{}}Flexibilidade\\ Personalização\\ Consideração da experiência do usuário\end{tabular}                                                                                                                                           \\ \hline
+Gestão de erros                        & \begin{tabular}[c]{@{}c@{}}Proteção de erros\\ Tolerância aos erros\\ Qualidade das mensagens de erro\\ Correção de erros\end{tabular}                                                                                                                    \\ \hline
+Coerência                              & \begin{tabular}[c]{@{}c@{}}Homogeneidade interna a uma aplicação\\ Homogeneidade externa a plataforma\end{tabular}                                                                                                                                        \\ \hline
+Significado dos códigos e denominações & Interface clara                                                                                                                                                                                                                                           \\ \hline
+Compatibilidade                        & \begin{tabular}[c]{@{}c@{}}Compatibilidade com o usuário\\ Compatibilidade com a tarefa dos usuários\\ Compatibilidade com a cultura dos usuários\end{tabular}                                                                                            \\ \hline
+\end{tabular}
+\caption{Conjunto integrador de critérios, princípios, regras e heurísticas de ergonomia}	
+\label{tabela-walter-cybis}
+\end{table}
 
 \section{Práticas de Usabilidade Ágeis}
+\label{praticas-usabilidade-ageis}
 %TODO
 
 \section{Usabilidade em Software Livre}
-%TODO
+\label{usabilidade-sl}
+%
+Para aplicação em ambientes distribuídos, abertos e colaborativos, como em comunidades de software livre, implica-se uma adaptação em métodos de usabilidade. Isso ocorre porque em comunidades de desenvolvimento de software livre, não se pode garantir a existência de um indivíduo especialista em usabilidade ou de uma equipe dedicada a essas atividades. A distância física de membros que contribuem com o projeto também dificulta a utilização de métodos de usabilidade que dependem de comunicação face a face. Mesmo assim, a usabilidade deve ainda ser considerada, afinal ela é muito importante para a criação de um sistema de qualidade, em qualquer ambiente.
+
+%
+A usabilidade deve fazer parte do desenvolvimento, não apenas em busca de produtos usáveis, mas também de práticas usáveis e de modo a envolver todos os membros de uma equipe considerando o contexto em que as práticas serão aplicadas. Dessa forma, não se tem uma equipe de acordo com os valores de métodos ágeis e de métodos de usabilidade se apenas alguns se preocupam em atender as necessidades dos usuários típicos e clientes, pois todos os membros precisam entender a importância de atendê-las.
+~\cite{}
+%Citar tese Ana Paula
+Ana Paula Oliveira dos Santos, em sua dissertação de mestrado, propôs práticas de usabilidade para a comunidade de software livre através da associação das fases do DCU(Design Centrado no Usuário) com as técnicas de usabilidade da comunidade ágil conforme a tabela \ref{tabela-usabilidade-sl}.
+
+\begin{table}[h]
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Práticas de usabilidade para Software Livre}}                                                                                                                                                                          \\ \hline
+\textbf{Fases DCU}                                                                                 & \textbf{Práticas de Usabilidade}                                                                                                 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Identificar necessidades para \\ design centrado em humano\end{tabular} & \begin{tabular}[c]{@{}c@{}}Equipe-Núcleo como Donos do Produto\\ Caminhos Completos\\ Especialista-generalista\end{tabular}      \\ \hline
+Especificar contexto de uso                                                                        & Pouco design antecipado e distribuído                                                                                            \\ \hline
+Especificar Requisitos                                                                             & Definir metas de usabilidade automáticas                                                                                         \\ \hline
+Avaliar designs                                                                                    & \begin{tabular}[c]{@{}c@{}}RITE (Rapid Iterative Testing and Evaluation)  \\ para desenvolvedores de software livre\end{tabular} \\ \hline
+\end{tabular}
+\caption{Práticas de usabilidade no contexto de Software Livre}	
+\label{tabela-usabilidade-sl}
+\end{table}
+
+As práticas são descritas apresentando um contexto, um problema e uma solução visando a adequação a comunidades de software livre.
+
+\textbf{Identificar necessidades para design centrado em humano}
+
+\textbf{Equipe-Núcleo como Donos do Produto}
+
+Contexto: Equipe de desenvolvimento de software livre composta por desenvolvedores e que não possui especialistas em usabilidade ou UX como membros. Contudo, a equipe-núcleo do projeto percebe a necessidade de compreender melhor os requisitos de negócios e de usabilidade, levando em consideração a visão de clientes e usuários típicos.
+Problema: Integrar requisitos de negócio com requisitos de usabilidade em um ambiente que não possui especialistas em usabilidade. Principais forças envolvidas:
+\begin{itemize}
+\item Força 1: Necessidade de levantamento de requisitos de negócios com clientes e requisitos de usabilidade com usuários típicos, de modo a integrá-los para o desenvolvimento do sistema.
+\item Força 2: Não existe garantia de que especialistas em usabilidade ou UX participarão voluntariamente do projeto e/ou não é possível contratá-los. Também não é possível garantir que desenvolvedores voluntários queiram participar dessas atividades.
+\end{itemize}
+Solução: Uma adaptação da prática Especialistas em UX como Donos do Produto, da comunidade de métodos ágeis, na qual a equipe-núcleo de um projeto de software livre assumiria o papel de Proprietários do Produto, que levam em consideração a usabilidade do sistema. Dessa forma, podem controlar as contribuições para o projeto, com a visão das necessidades de usuários típicos e clientes.
+
+%
+\textbf{Caminhos Completos}
+
+Contexto: Equipe de desenvolvimento de software livre composta por desenvolvedores e que não possui especialistas em usabilidade ou UX como membros. Contudo, a equipe-núcleo do projeto precisa empregar práticas de usabilidade durante o desenvolvimento do sistema.
+Problema: Realizar práticas de usabilidade em projetos de software livre que não possuem especialistas em usabilidade ou UX. Principais forças envolvidas:
+\begin{itemize}
+\item Força 1: Necessidade de realizar práticas de usabilidade para pesquisa de usuários, levanta- mento de requisitos e metas de usabilidade, definição de design e avaliações com usuários e clientes.
+\item Força 2: Não existe garantia de que especialistas em usabilidade ou UX participarão voluntariamente do projeto e/ou não é possível contratá-los.
+\item Força 3: Desenvolvimento distribuído e participação esporádica de membros.
+\end{itemize}
+Solução: Em vez de caminhos paralelos entre equipe de desenvolvimento e de UX, como ocorre na prática Caminhos paralelos da comunidade de métodos ágeis, a equipe de desenvolvimento executa o ciclo completo de DCU para um conjunto específico de funcionalidades, utilizando-se de Pouco design antecipado ou Pouco design antecipado e distribuído para coletar informações. A prática pode ser executada apenas pela equipe-núcleo do projeto ou mesmo com a participação dos demais contribuidores que desejem participar.
+
+%
+\textbf{Especialista-generalista}
+
+Contexto: Equipes de desenvolvimento de software livre, que não possuem especialistas em usabilidade ou UX como membros do time, compostas por desenvolvedores que desejam desenvolver sistemas com melhor usabilidade para usuários típicos.
+Problema: Ausência de especialistas em usabilidade ou UX na equipe de desenvolvimento do projeto. Principais forças envolvidas:
+\begin{itemize}
+\item Força 1: Não existe garantia de que especialistas em usabilidade ou UX participarão voluntariamente do projeto e/ou não é possível contratá-los.
+\item Força 2: Desenvolvimento distribuído e participação esporádica de membros.
+\end{itemize}
+Solução: Os desenvolvedores da equipe-núcleo do projeto aplicam práticas de usabilidade para entender quem são os usuários típicos do sistema, quais são as suas necessidades e em que contexto o sistema seria utilizado, de modo a incluir essas considerações nos requisitos da aplicação. As pesquisas têm baixa granularidade, ou seja, realiza-se apenas o necessário para o entendimento das funcionalidades da próxima iteração. Os requisitos podem ser definidos por meio da escrita de cartões de histórias de usuários, que são validados com o cliente conforme ocorre em comunidades de métodos ágeis. A documentação detalhada dos requisitos pode ser encontrada nos testes de aceitação, que podem ser acessados por qualquer desenvolvedor do sistema, conforme a prática Testes de aceitação de comunidades de métodos ágeis, o que mantém um relatório atualizado das funcionalidades do sistema que atendem ao comportamento esperado. As metas de usabilidade do sistema também podem ser descritas por meio da proposta de prática Definir metas de usabilidade automáticas.
+
+
+%
+\textbf{Especificar contexto de uso}
+
+\textbf{Pouco design antecipado e distribuído}
+
+Contexto: Equipe de desenvolvimento de software livre composta por desenvolvedores e que não possui especialistas em usabilidade ou UX como membros. Membros da equipe-núcleo do projeto e contribuidores encontram-se distribuídos em diversas localidades. Contudo, existe a necessidade de realização de pesquisas presenciais com usuários típicos para melhor compreensão do contexto de uso do sistema.
+Problema: Utilizar práticas de usabilidade, em ambiente de desenvolvimento de software livre, para especificar contexto de uso de um sistema, onde membros da equipe estão dispersos em vários locais diferentes. Principais forças envolvidas:
+\begin{itemize}
+\item Força 1: Distância física entre membros de uma comunidade de desenvolvimento de software livre.
+\item Força 2: Necessidade de realização de pesquisas de usabilidade para definição de perfil de usuários típicos e o contexto de uso do sistema.
+\item Força 3: Possibilitar a participação de voluntários de diversas culturas.
+\end{itemize}
+Solução: Equipe-núcleo do projeto é responsável por definir quais são as práticas de usabilidade a serem utilizadas para especificação do contexto de uso de um sistema e também por realizar as práticas presenciais na sua cidade. Membros da equipe, que se encontram dispersos em locais distintos, poderiam aplicar a mesma prática em sua localidade, de modo a obter feedback de usuários com culturas diferentes; por exemplo, replicando testes, sessões de grupos focais ou entrevistas presenciais, em sua região ou país. Desse modo, possibilita-se a obtenção da percepção cultural de vários locais distintos, de modo a explorar o contexto de projetos abertos, no qual podem existir desenvolvedores, usuários, membros da equipe-núcleo e contribuidores em diversas localidades.
+
+
+%
+\textbf{Especificar requisitos}
+
+\textbf{Definir metas de usabilidade automáticas}
+
+Contexto: Desenvolvimento aberto, distribuído e colaborativo, onde desenvolvedores podem entrar e sair do projeto durante o processo de desenvolvimento. Também não existe uma equipe de usabilidade trabalhando em conjunto com a equipe de desenvolvimento.
+Problema: Definir metas de usabilidade de modo que todos os desenvolvedores que contribuam com um projeto aberto possam conhecer as metas definidas. Principais forças envolvidas:
+\begin{itemize}
+\item Força 1: Necessidade de definição de metas de usabilidade que atendam às necessidades de usuários típicos.
+\item Força 2: Possibilitar que todos os desenvolvedores tenham contato diário com as metas de usabilidade definidas
+\item Força 3: Desenvolvimento distribuído e participação esporádica de membros.
+\item Força 4: Manter documentação atualizada das metas de usabilidade tratadas pelo sistema.
+\end{itemize}
+Solução: Escrita de testes de aceitação automáticos baseados em Behaviour Driven Development
+(BDD) para definição de metas de usabilidade. Para o contexto de desenvolvimento livre, seria mais eficiente escrever as metas de usabilidade diretamente no ambiente de desenvolvimento do que em documentos separados, que correm o risco de não serem lidos. Sendo assim, conforme grupos de funcionalidades são selecionados para desenvolvimento, descreve-se as metas de usabilidade que precisam ser cumpridas para essas funcionalidades. Membros da equipe-núcleo do projeto podem escrever testes de aceitação automáticos, envolvendo usuários típicos e/ou clientes, o que possibilita documentar o comportamento esperado para a funcionalidade, e também gerar um relatório do funcionamento do sistema, exibindo quais funcionalidades e quais cenários são implementados de acordo com as necessidades dos usuários reais.
+
+
+%
+\textbf{Avaliar designs}
+
+\textbf{RITE (Rapid Iterative Testing and Evaluation)  para desenvolvedores de software livre}
+
+Contexto: Equipes de desenvolvimento de software livre que não possuem especialistas em usabilidade ou UX como membros do time, mas que tem a necessidade de realizar testes de usabilidade com usuários típicos do sistema de modo a desenvolver sistemas com melhor usabilidade.
+Problema: Possibilitar a identificação e correção de problemas de usabilidade no menor tempo possível durante o desenvolvimento de software livre. Principais forças envolvidas:
+\begin{itemize}
+\item Força 1: Diminuir a distância entre a identificação e a correção de problemas de usabilidade encontrados em testes com usuários.
+\item Força 2: Não existe garantia de que especialistas em usabilidade ou UX participarão voluntariamente do projeto e/ou não é possível contratá-los.
+\end{itemize}
+Solução: O método RITE pode ser aplicado por membros da equipe-núcleo do projeto, não sendo
+necessário utilizar laboratórios de usabilidade com a aplicação de testes formais. Os desenvolvedores da equipe-núcleo podem observar os usuários utilizando um pequeno conjunto de funcionalidades do sistema e solicitar que falem em voz alta o que estão pensando, enquanto o utilizam (Protocolo Pensando em voz alta). Não seria necessária a criação de relatórios e análises de vídeo dos testes, pois os desenvolvedores que estarão envolvidos na correção dos problemas encontrados podem participar do teste como moderadores ou observadores, de modo que possam obter o conhecimento das melhorias necessárias que precisam ser implementadas. Para documentar problemas referentes a um comportamento esperado do sistema, os testes de aceitação automáticos, utilizados pela comunidade de métodos ágeis, podem servir como forma de documentação, como também, para verificar se o sistema está realizando a tarefa do modo que se espera. Nesse caso, o relatório de teste de usabilidade seria substituído por testes de aceitação automáticos. A criação dos testes de aceitação, nesse caso, seria feita pelos próprios desenvolvedores que participaram do teste e conhecem o problema a ser resolvido. Um breve brainstorm após a sessão de teste serviria para consolidar as impressões dos membros da equipe envolvidos, possibilitando definir como os problemas serão corrigidos. A correção dos problemas encontrados seria realizada na sequência da realização do teste. Dessa forma, os testes de aceitação serviriam para registrar como corrigir um problema de usabilidade, detectado no teste com usuários típicos, para um determinado cenário de uso do sistema.
+
+Assumindo as práticas descritas ao estudo de caso Mezuro, o ciclo de vida e aplicação destas na comunidade de software livre será seguido dentro do projeto, junto com a equipe de desenvolvimento, visando suprir as deficiências e problemas citados no capítulo \ref{cap-introducao}.
 
 \section{Métodos de Avalição}
+\label{metodos-avaliacao}
 
 Uma  vez que conceituamos as práticas de usabilidade ágeis e o que 
 encontramos sobre usabilidade em projetos de software livre, nesta seção
-detalharemos o método escolhido para...
+detalharemos os métodos escolhidos para a avaliação da ergonomia das interfaces. Os métodos de avaliação trás um diagnóstico através de verificações e inspeções de aspectos ergonômicos das interfaces que possam ser um problema ao usuário durante sua interação com o sistema. Através desse diagnóstico é possível priorizar e classicar os problemas encontrados de acordo com o método escolhido.
 %TODO: fazer uma introdução da subseção...
 
 \subsection{Avaliação heurísticas}
@@ -159,24 +288,31 @@ ergonômicas das Interfaces Humano-Computador. Essa avaliação é realizada por
 especialistas em ergonomia, com base em sua experiência e competência no
 assunto~\cite{}.
 %TODO: referência de [Cybis, 2010]
+
 %
 Para utilização de uma avaliação heurística serão definidos os graus de
-severidade, de acordo com~\cite{}:
+severidade. A severidade do problema de usabilidade é uma combinação de três fatores:
+\begin{itemize}
+\item A frequência com que ocorre o problema : é comum ou raro?
+\item O impacto do problema caso ocorra : Será que vai ser fácil ou difícil para os usuários a superar ?
+\item A persistência do problema: É um problema que com o tempo os usuários possam superar , uma vez que sabe sobre ele ou os usuários repetidamente serão incomodados pelo problema ?
+\end{itemize}
+
+A escala de classificação seguinte de 0 a 4 pode ser usada para avaliar a severidade dos problemas de usabilidade:~\cite{}:
 %TODO: referência de Jakob Nielsen proposto em 1995
-\begin{enumarate}
+\begin{itemize}
 
-    \item Não há consenso quanto a ser um problema de usabilidade: ...
+    \item 0 = Não há consenso quanto a ser um problema de usabilidade
 
-    \item Problema cosmético: ...
+    \item 1 = Problema cosmético
 
-    \item Problema menor: ...
+    \item 2 = Problema menor
+	
+    \item 3 = Problema importante de usabilidade
 
-    \item Problema importante de usabilidade: ...
+    \item 4 = Catástrofe de usabilidade
 
-    \item Catástrofe de usabilidade: ...
-
-\end{enumerate}
-%TODO: colocar a definição de cada um dos itens acima...
+\end{itemize}
 
 A presentação dos resultados seguirá um modelo simples similar ao que é
 utilizado em desenvolvimento ágil para documentação de defeitos, elencando o
@@ -199,7 +335,7 @@ sistema que este não esteja familiarizado.
 %
 A ISO 9241 fornece listas de verificação de ergonomia bem definidas, porém será
 utilizado as listas do laboratório LabIUtil do projeto
-ErgoList~\footnote{\url{http:\\labiutil.inf.ufsc.br/ergolist/check.htm},
+ErgoList~\footnote{\url{http:labiutil.inf.ufsc.br/ergolist/check.htm}},
 que fornece um serviço na Internet para aplicar aplicarmos uma avaliação
 simplificada e objetiva (\textit{check-list}) e obtermos os resultados
 imediatamente.
@@ -210,3 +346,4 @@ avaliação e sistematizar as avaliações se tratando de abrangência de compon
 a inspecionar.
 
 %TODO tem que fechar melhor o capítulo...
+Com a aplicação dos métodos de avalição será obtido os relatórios com os diagnósticos da verificação e inspeção dos aspectos ergonômicos. Estes possibilitarão a classificação (de acordo com cada método) e a priorização dos problemas encontrados, fator fundamental para sustentar as práticas de usabilidade adotadas para a implementação no estudo de caso Mezuro descritas na seção \ref{usabilidade-sl}. Ter o controle dos problemas levantados e seus impactos na aplicação, irá auxiliar na tomada de decisão da equipe e deixará todos cientes do andamento da usabilidade no projeto e sua importância dentro do desenvolvimento. 
