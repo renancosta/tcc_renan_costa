@@ -11,14 +11,14 @@ um equipamento ou programa pode ser usado. Esse termo dentro da computação foi
 diversas vezes refinado como nas ISO 9126, 12119, 9241, 14598 e, por fim, na ISO
 25010, que define como uma medida pela qual um produto pode ser usado por
 usuários específicos para alcançar metas específicas com eficácia, eficiência e
-satisfação em um contexto específico de uso~\cite{}.
+satisfação em um contexto específico de uso~\cite{iso25010}.
 %TODO: colocar referência da ISO.
 
 %
 A usabilidade não é uma qualidade intrínseca de um sistema, é dependente de um
 acordo entre as características de sua interface e as características de seus
-usuários na busca de determinados objetivos e situação de uso~\cite{}.
-%TODO: referência para Cybis, 2010]
+usuários na busca de determinados objetivos e situação de uso~\cite{cybis2010}.
+
 %
 Por esse motivo uma interface que pode ser considerada satisfatória para
 determinado grupo de usuários pode ser inviabilizada por outros, como usuários
@@ -37,8 +37,7 @@ conceito de ergonomia.
 %
 Tal conceito surgiu logo após a II Guerra Mundial, como consequência do trabalho
 interdisciplinar realizado por diversos profissionais, tais como engenheiros,
-fisiologistas e psicólogos, durante a guerra~\cite{}.
-%TODO: referenciar Lida, 2005
+fisiologistas e psicólogos, durante a guerra~\cite{lida2005}.
 
 %
 Há algumas definições formais para o termo ``ergonomia'', de acordo com a
@@ -49,7 +48,7 @@ Para este trabalho, adotamos a definição da Associação Brasileira de Ergonom
 que a conceitua como o estudo das interações das pessoas com a tecnologia, a
 organização e o ambiente, objetivando intervenções e projetos que visem
 melhorar, de forma integrada e não-dissociada, a segurança, o conforto, o
-bem-estar e a eficácia das atividades humanas \cite{}.
+bem-estar e a eficácia das atividades humanas \cite{abergo2013}.
 %TODO: referência para o texto da ABE.
 
 %
@@ -63,8 +62,7 @@ para nortear essa necessidade.
 
 \begin{itemize}
 \item Jakob Nielsen, em seu livro \textit{Usability Engineering} , propõe um
-conjunto de dez heurísticas de usabilidade~\cite{}:
-%TODO: referência para o livro Usability Engineering
+conjunto de dez heurísticas de usabilidade~\cite{nielsen1994}:
 
     \begin{itemize} 
 
@@ -90,8 +88,8 @@ conjunto de dez heurísticas de usabilidade~\cite{}:
 
     \end{itemize}
 
-\item Ben Shneiderman, em seu  \textit{livro Designing The User Interface},
-propõe, o que ele denominou de ``oito regras de ouro'':
+\item Ben Shneiderman, em seu livro \textit{Designing The User Interface},
+propõe, o que ele denominou de ``oito regras de ouro''~\cite{shneiderman2003}
 
     \begin{itemize} 
 
@@ -113,9 +111,7 @@ propõe, o que ele denominou de ``oito regras de ouro'':
 
     \end{itemize}
 
-\item Christian Bastien e Dominique Scapin definiram 8 critérios ergonômicos:
-%TODO: completar (Primeiro e segundo nome dos autores para ficar igual aos
-%      anteriores) e colocar as referências
+\item Christian Bastien e Dominique Scapin definiram 8 critérios ergonômicos~\cite{bastien1993}
 
     \begin{itemize}
 
@@ -141,8 +137,9 @@ propõe, o que ele denominou de ``oito regras de ouro'':
 
 Portanto, baseado nas heurísticas e critérios listados acima,  Walter Cybis, no
 livro Ergonomia e Usabilidade, propôs uma tabela que relaciona todas essas
-definições, conforme apresentado na Tabela \ref{tabela-walter-cybis}~\cite{}.
-%TODO: referência de  Walter Cybis
+definições, conforme apresentado na Tabela \ref{tabela-walter-cybis}~\cite{cybis2010}.
+
+%
 \begin{table}[h]
 \begin{tabular}{|l|l|}
 \hline
@@ -163,23 +160,24 @@ Compatibilidade                        & \begin{tabular}[c]{@{}c@{}}Compatibilid
 \label{técnicas-usabilidade-ageis}
 
 
-Técnicas de usabilidade e desenvolvimento ágil têm muito em comum, principalmente o fato de que, muitas vezes, estão envolvidos no desenvolvimento do mesmo software. Apesar disso, tem havido pouca investigação ou discussão sobre a forma como os dois processos trabalham em conjunto e os resultados dessa parceria. ~\cite{}.%Jennifer Ferreira 1 , James Noble 1 E Robert Biddle
+Técnicas de usabilidade e desenvolvimento ágil têm muito em comum, principalmente o fato de que, muitas vezes, estão envolvidos no desenvolvimento do mesmo software. Apesar disso, tem havido pouca investigação ou discussão sobre a forma como os dois processos trabalham em conjunto e os resultados dessa parceria. ~\cite{ferreira2007}.
 
 %
 Para tanto realizou-se uma revisão sistemática. A revisão sistemática é uma forma de síntese das informações disponíveis em dado momento, sobre um
 problema específico, de forma objetiva e reproduzível, por meio de método científico. Ela tem como princípios gerais a exaustão na busca dos estudos analisados, a seleção justificada dos estudos por critérios de inclusão e exclusão explícitos e a avaliação da qualidade metodológica, bem
-como a quantificação do efeito dos tratamentos por meio de técnicas estatísticas.\cite{}%Lima MS de, Soares BGO, Bacaltchuk J. Psiquiatria baseada em evidências. Rev Bras Psiquiatr 2000 setembro; 22(3):142- 6.
+como a quantificação do efeito dos tratamentos por meio de técnicas estatísticas.\cite{de2000psiquiatria}
+
 O Objetivo da revisão sistemática era levantar as técnicas de usabilidade em projetos ágeis aplicadas no desenvolvimento de software livre. A busca foi realizada nas bibliotecas digitais Google Academic e Springer Link que possuem máquinas de busca com bom funcionamento e abrangência, além das bases de teses e dissertações da UnB e USP. nas Como resultado do trabalho levantou-se uma lista de técnicas e selecionadas aquelas que poderiam ser mais facilmente aplicadas em projetos de software livre.
 
 %
-Santos e Kon (2012) propõe a aplicação do próprio processo de DCU (Design Centrado no Usuário) para levantamento dos usuários e do contexto de uso da metodologia. Os usuários do processo são membros de equipes de software livre, que desejam inserir práticas de usabilidade no processo de desenvolvimento. O contexto de uso são sistemas distribuídos geograficamente, com pessoas trabalhando colaborativamente. Os métodos podem ser aplicados tanto para o início de novos projetos, que tenham como usuários, pessoas não acostumadas a sistemas livres ou mesmo para a melhoria de sistemas existentes, com respeito à usabilidade.~\cite{}%Aplicação de metodologias ...
+Santos e Kon (\citeyear{santoskon2009}) propõe a aplicação do próprio processo de DCU (Design Centrado no Usuário) para levantamento dos usuários e do contexto de uso da metodologia. Os usuários do processo são membros de equipes de software livre, que desejam inserir práticas de usabilidade no processo de desenvolvimento. O contexto de uso são sistemas distribuídos geograficamente, com pessoas trabalhando colaborativamente. Os métodos podem ser aplicados tanto para o início de novos projetos, que tenham como usuários, pessoas não acostumadas a sistemas livres ou mesmo para a melhoria de sistemas existentes, com respeito à usabilidade.
 
 %
-Já Lee, Judge e McCrickard (2011) defendem a aplicação de definição de histórias de usuário de usabilidade dirigidas pela decisão do responsável por design realizando a prototipação dessas histórias e depois sendo validadas através de testes de usabilidade conforme Figura \ref{fig:figuraCDR}~\cite{}.
+Já Lee, Judge e McCrickard (\citeyear{lee2011}) defendem a aplicação de definição de histórias de usuário de usabilidade dirigidas pela decisão do responsável por design realizando a prototipação dessas histórias e depois sendo validadas através de testes de usabilidade conforme Figura \ref{fig:figuraCDR}.
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=0.5\textwidth]{figuras/figuraCDR.png}
+    \includegraphics[width=0.5\textwidth]{figuras/figuraCDR.eps}
     \caption{Ciclo de atividades de usabilidade}
     \label{fig:figuraCDR}
   \end{center}
@@ -190,25 +188,25 @@ As atividades de usabilidade seguem o modelo de ciclo de vida das outras ativida
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=0.5\textwidth]{figuras/figuraCDR2.png}
+    \includegraphics[width=0.5\textwidth]{figuras/figuraCDR2.eps}
     \caption{Ciclo das tarefas de usabilidade x desenvolvimento}
     \label{fig:figuraCDR2}
   \end{center}
 \end{figure}
 
 %
-Santos (2012) em uma nova pesquisa aplicada propós a aplicação das técnicas de usabilidade de acordo com as fases do DCU, conforme a descrição das técnicas de usabilidade das comunidades de métodos ágeis e de software livre. Para a fase do DCU Criar soluções de design, não foram identificadas propostas de adaptações, sendo portanto, descritas propostas para as fases: Identificar necessidades para design centrado em humano, Especificar contexto de uso, Especificar requisitos e Avaliar Designs conforme Figura \ref{fig:figuraDCU}.
+Santos (\citeyear{santos2012}) em uma nova pesquisa aplicada propôs a aplicação das técnicas de usabilidade de acordo com as fases do DCU, conforme a descrição das técnicas de usabilidade das comunidades de métodos ágeis e de software livre. Para a fase do DCU Criar soluções de design, não foram identificadas propostas de adaptações, sendo portanto, descritas propostas para as fases: Identificar necessidades para design centrado em humano, Especificar contexto de uso, Especificar requisitos e Avaliar Designs conforme Figura \ref{fig:figuraDCU}.
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=0.7\textwidth]{figuras/figuraDCU.png}
+    \includegraphics[width=0.7\textwidth]{figuras/figuraDCU.eps}
     \caption{Técnicas de usabilidade baseado no DCU}
     \label{fig:figuraDCU}
   \end{center}
 \end{figure}
 
 %
-Moreno e Yagüe (2012) trás em seu trabalho a inserção da usabilidade por meio da criação de User Stories de usabilidade que denominam de \textit{Usability Stories}. Tendo que especificar os recursos funcionais de usabilidade que serão utilizados no projeto, o artigo trás um tabela que é necessária para definir as características dessa funcionalidade.
+Moreno e Yagüe (\citeyear{moreno2012}) trás em seu trabalho a inserção da usabilidade por meio da criação de User Stories de usabilidade que denominam de \textit{Usability Stories}. Tendo que especificar os recursos funcionais de usabilidade que serão utilizados no projeto, o artigo trás um tabela que é necessária para definir as características dessa funcionalidade.
 
 \begin{table}[H]
 \begin{tabular}{|l|l|}
@@ -267,8 +265,9 @@ Para aplicação em ambientes distribuídos, abertos e colaborativos, como em co
 
 %
 A usabilidade deve fazer parte do desenvolvimento, não apenas em busca de produtos usáveis, mas também de práticas usáveis e de modo a envolver todos os membros de uma equipe considerando o contexto em que as práticas serão aplicadas. Dessa forma, não se tem uma equipe de acordo com os valores de métodos ágeis e de métodos de usabilidade se apenas alguns se preocupam em atender as necessidades dos usuários típicos e clientes, pois todos os membros precisam entender a importância de atendê-las.
-~\cite{}
-%Citar tese Ana Paula
+~\cite{santos2012}
+
+%
 Ana Paula Oliveira dos Santos, em sua dissertação de mestrado, propôs práticas de usabilidade para a comunidade de software livre através da associação das fases do DCU(Design Centrado no Usuário) com as técnicas de usabilidade da comunidade ágil conforme a tabela \ref{tabela-usabilidade-sl}.
 
 \begin{table}[h]
@@ -285,7 +284,7 @@ Avaliar designs                                                                 
 \label{tabela-usabilidade-sl}
 \end{table}
 
-As práticas são descritas apresentando um contexto, um problema e uma solução visando a adequação a comunidades de software livre.
+As práticas são descritas por ela apresentando um contexto, um problema e uma solução visando a adequação a comunidades de software livre.
 
 \textbf{Identificar necessidades para design centrado em humano}
 
@@ -377,14 +376,12 @@ Assumindo as práticas descritas ao estudo de caso Mezuro, o ciclo de vida e apl
 Uma  vez que conceituamos as práticas de usabilidade ágeis e o que 
 encontramos sobre usabilidade em projetos de software livre, nesta seção
 detalharemos os métodos escolhidos para a avaliação da ergonomia das interfaces. Os métodos de avaliação trás um diagnóstico através de verificações e inspeções de aspectos ergonômicos das interfaces que possam ser um problema ao usuário durante sua interação com o sistema. Através desse diagnóstico é possível priorizar e classificar os problemas encontrados de acordo com o método escolhido.
-%TODO: fazer uma introdução da subseção...
 
 \subsection{Avaliação heurísticas}
 Uma avaliação heurística representa um julgamento de valor sobre as qualidades
 ergonômicas das Interfaces Humano-Computador. Essa avaliação é realizada por
 especialistas em ergonomia, com base em sua experiência e competência no
-assunto~\cite{}.
-%TODO: referência de [Cybis, 2010]
+assunto~\cite{cybis2010}.
 
 %
 Para utilização de uma avaliação heurística serão definidos os graus de
@@ -395,8 +392,8 @@ severidade. A severidade do problema de usabilidade é uma combinação de três
 \item A persistência do problema: É um problema que com o tempo os usuários possam superar , uma vez que sabe sobre ele ou os usuários repetidamente serão incomodados pelo problema ?
 \end{itemize}
 
-A escala de classificação seguinte de 0 a 4 pode ser usada para avaliar a severidade dos problemas de usabilidade:~\cite{}:
-%TODO: referência de Jakob Nielsen proposto em 1995
+A escala de classificação seguinte de 0 a 4 pode ser usada para avaliar a severidade dos problemas de usabilidade:~\cite{nielsen1995severity}:
+
 \begin{itemize}
 
     \item 0 = Não há consenso quanto a ser um problema de usabilidade
@@ -423,8 +420,8 @@ problemas menores e repetitivos das interfaces.
 %
 Nesse tipo de técnica, ao contrário das avaliações heurísticas, são mais as
 qualidades explicativas da ferramenta e menos os conhecimentos implícitos dos
-avaliadores que determinam as possibilidades para a avaliação~\cite{}.
-%TODO: ref. Cybis, 2010
+avaliadores que determinam as possibilidades para a avaliação~\cite{cybis2010}.
+
 %
 Através das inspeções de ergonomia será possível suprir um deficit ocasionado
 pela falta de experiência do avaliador dentro de determinados contextos do
@@ -442,5 +439,4 @@ ergonômicos, reduzir a subjetividade normalmente associada a processos de
 avaliação e sistematizar as avaliações se tratando de abrangência de componentes
 a inspecionar.
 
-%TODO tem que fechar melhor o capítulo...
 Com a aplicação dos métodos de avaliação será obtido os relatórios com os diagnósticos da verificação e inspeção dos aspectos ergonômicos. Estes possibilitarão a classificação (de acordo com cada método) e a priorização dos problemas encontrados, fator fundamental para sustentar as práticas de usabilidade adotadas para a implementação no estudo de caso Mezuro descritas na seção \ref{usabilidade-sl}. Ter o controle dos problemas levantados e seus impactos na aplicação, irá auxiliar na tomada de decisão da equipe e deixará todos cientes do andamento da usabilidade no projeto e sua importância dentro do desenvolvimento. 

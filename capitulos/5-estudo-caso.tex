@@ -4,8 +4,7 @@
 O trabalho de pesquisa desenvolvido durante o capítulo \ref{cap-usabilidade}, onde se levantou técnicas de usabilidade ágeis que poderiam ser aplicadas na comunidade de software livre conforme seção \ref{técnicas-usabilidade-ageis} e depois a seleção de uma dessas técnicas a fim de realizar sua descrição e detalhamento na seção \ref{usabilidade-sl} tinha como objetivo definir a forma que seria integrado a usabilidade em uma equipe de desenvolvimento em um contexto de software livre. Detalhar essa forma de trabalho se faz necessário, pois esses conceitos e métodos serão apresentados e aplicados em uma ferramenta real que será utilizada como estudo de caso.
 
 %
-YIN (1989)%YIN, Robert K. - Case Study Research - Design and Methods. Sage Publications Inc., USA, 1989. 
-diz que "o estudo de caso é uma inquirição empírica que investiga um fenômeno contemporâneo dentro de um contexto da vida real, quando a fronteira entre o fenômeno e o contexto não é claramente evidente e onde múltiplas fontes de evidência são utilizadas".
+YIN (\citeyear{yin2009}) diz que "o estudo de caso é uma inquirição empírica que investiga um fenômeno contemporâneo dentro de um contexto da vida real, quando a fronteira entre o fenômeno e o contexto não é claramente evidente e onde múltiplas fontes de evidência são utilizadas".
 Validar a pesquisa através de sua aplicação trás vantagens como:
 \begin{itemize}
 \item Produção de artefatos descritivos suficientemente rico para permitir reinterpretações subsequentes.
@@ -14,7 +13,7 @@ Validar a pesquisa através de sua aplicação trás vantagens como:
 \end{itemize}
 
 %
-Segundo YIN (1989), para um estudo de caso deve se definir:
+Segundo YIN (\citeyear{yin2009}), para um estudo de caso deve se definir:
 \begin{itemize}
 \item Uma visão geral do projeto do estudo de caso
 \item Os procedimentos que serão aplicados, abordados
@@ -25,20 +24,20 @@ Segundo YIN (1989), para um estudo de caso deve se definir:
 %
 A definição dessa estrutura se dá de forma automática devido ao modelo adotado de abordagem da usabilidade dentro do projeto facilitando a aplicação do método.
 
-A ferramenta definida para o estudo de caso foi o software livre Mezuro, uma plataforma de monitoramento de código-fonte. A escolha desta ferramenta se deve ao fato que, ao ser concebida, um trabalho similiar foi realizado pela pesquisadora Ana Paula Oliveira dos Santos, porém a ferramenta se tratava de um plugin de outra plataforma e tornou-se necessário uma migração para uma ferramenta standalone. Com essa troca muito foram as mudanças e os aspectos de usabilidade passaram a necessitar de um novo planejamento.Outro fator importante foi a facilidade de estar inserido junto a equipe de desenvolvimento, ficando assim mais próximo do projeto.
+A ferramenta definida para o estudo de caso foi o software livre Mezuro, uma plataforma de monitoramento de código-fonte. A escolha desta ferramenta se deve ao fato que, ao ser concebida, um trabalho similar foi realizado pela pesquisadora Ana Paula Oliveira dos Santos, porém a ferramenta se tratava de um plugin de outra plataforma e tornou-se necessário uma migração para uma ferramenta standalone. Com essa troca muito foram as mudanças e os aspectos de usabilidade passaram a necessitar de um novo planejamento.Outro fator importante foi a facilidade de estar inserido junto a equipe de desenvolvimento, ficando assim mais próximo do projeto.
 
 \section{Mezuro}
 \label{mezuro}
-O Mezuro é uma plataforma para analisar e compreender as métricas, bem como, aplicar os conceitos de código limpo, medição de software e atratividade do software livre. Ele é um software livre sob licença AGPL~\footnote{GNU Affero General Public License (AGPL): \url{gnu.org/licenses/agpl.html}}. Mezuro usa Kalibro Metrics , que é um serviço web que pode se conectar a diferentes tipos de repositórios de código-fonte , baixar projetos de software e executar muitos coletor métrica integrada e ferramentas de calculadora automaticamente. Kalibro é licenciado LGPL~\footnote{GNU Lesser General Public License (LGPL):\url{gnu.org/licenses/lgpl.html}}~\cite{}.%Artigo mezuro
-É uma aplicação Web para que os líderes e desenvolvedores de projetos de software livre possam monitorar características de código-fonte, através de métricas de acoplamento, coesão, tamanho, encapsulamento, entre outras. Isso proporciona um acompanhamento do quanto o software está crescendo e se tornando mais complexo em relação a ele mesmo e à média dos projetos avaliados pelo Mezuro~\cite{}%Ana Paula mestrado
+O Mezuro é uma plataforma para analisar e compreender as métricas, bem como, aplicar os conceitos de código limpo, medição de software e atratividade do software livre. Ele é um software livre sob licença AGPL~\footnote{GNU Affero General Public License (AGPL): \url{gnu.org/licenses/agpl.html}}. Mezuro usa Kalibro Metrics , que é um serviço web que pode se conectar a diferentes tipos de repositórios de código-fonte , baixar projetos de software e executar muitos coletor métrica integrada e ferramentas de calculadora automaticamente. Kalibro é licenciado LGPL~\footnote{GNU Lesser General Public License (LGPL):\url{gnu.org/licenses/lgpl.html}}~\cite{mezuro2012}.
+É uma aplicação Web para que os líderes e desenvolvedores de projetos de software livre possam monitorar características de código-fonte, através de métricas de acoplamento, coesão, tamanho, encapsulamento, entre outras. Isso proporciona um acompanhamento do quanto o software está crescendo e se tornando mais complexo em relação a ele mesmo e à média dos projetos avaliados pelo Mezuro~\cite{santos2012}
 .
 
 A plataforma Mezuro foi desenvolvida no contexto do projeto QualiPSo (\textit{Trust and Quality in Open Source Systems}).
 O projeto integrado Qualipso (Quality Plataform for Open Source) busca definir e implementar tecnologias, procedimentos, leis e políticas com o objetivo de potencializar as práticas de desenvolvimento de software livre, tornando-as confiáveis, reconhecidas e estabelecidas na indústria.
-Para viabilizar o projeto e a sustentação do software livre como uma solução confiável para a indústria, criou-se um consórcio formado por colaboradores de diferentes origens: França, Itália, Brasil, Espanha, China, Alemanha e Escócia~\cite{}%Qualipso http://qualipso.icmc.usp.br/ acessado em: novembro 2013
+Para viabilizar o projeto e a sustentação do software livre como uma solução confiável para a indústria, criou-se um consórcio formado por colaboradores de diferentes origens: França, Itália, Brasil, Espanha, China, Alemanha e Escócia~\cite{qualipso2013}
 .
 
-Para o desenvolvimento do Mezuro realizou-se um estudo de plataformas correlatas a fim de melhor situar as resoluções já existentes~\cite{}%Paulo Meirelles
+Para o desenvolvimento do Mezuro realizou-se um estudo de plataformas correlatas a fim de melhor situar as resoluções já existentes~\cite{meirelles2013}%Paulo Meirelles
 . As ferramentas estudadas foram:
 
 \begin{description}
@@ -110,7 +109,7 @@ Desses artefatos um deles são os protótipos de telas que visam instruir a equi
  
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=1\textwidth]{figuras/Login.png}
+    \includegraphics[width=1\textwidth]{figuras/Login.eps}
     \caption{Protótipo de tela: Login}
     \label{fig:pLogin}
   \end{center}
@@ -118,7 +117,7 @@ Desses artefatos um deles são os protótipos de telas que visam instruir a equi
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=1\textwidth]{figuras/Signup.png}
+    \includegraphics[width=1\textwidth]{figuras/Signup.eps}
     \caption{Protótipo de tela: Signup}
     \label{fig:pSignup}
   \end{center}
@@ -126,7 +125,7 @@ Desses artefatos um deles são os protótipos de telas que visam instruir a equi
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=1\textwidth]{figuras/NewRepository.png}
+    \includegraphics[width=1\textwidth]{figuras/NewRepository.eps}
     \caption{Protótipo de tela: New Repository}
     \label{fig:pNewRepository}
   \end{center}
@@ -134,7 +133,7 @@ Desses artefatos um deles são os protótipos de telas que visam instruir a equi
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=1\textwidth]{figuras/NewProject.png}
+    \includegraphics[width=1\textwidth]{figuras/NewProject.eps}
     \caption{Protótipo de tela: New Protótipo}
     \label{fig:pNewPrototipo}
   \end{center}
