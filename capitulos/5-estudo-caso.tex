@@ -28,7 +28,22 @@ A ferramenta definida para o estudo de caso foi o software livre Mezuro, uma pla
 
 \section{Mezuro}
 \label{mezuro}
-O Mezuro é uma plataforma para analisar e compreender as métricas, bem como, aplicar os conceitos de código limpo, medição de software e atratividade do software livre. Ele é um software livre sob licença AGPL~\footnote{GNU Affero General Public License (AGPL): \url{gnu.org/licenses/agpl.html}}. Mezuro usa Kalibro Metrics , que é um serviço web que pode se conectar a diferentes tipos de repositórios de código-fonte , baixar projetos de software e executar muitos coletor métrica integrada e ferramentas de calculadora automaticamente. Kalibro é licenciado LGPL~\footnote{GNU Lesser General Public License (LGPL):\url{gnu.org/licenses/lgpl.html}}~\cite{mezuro2012}.
+
+A plataforma Mezuro foi concebida com o intuito de comparar projetos e métricas técnicas,
+ensinar como usar métricas através de configurações, analisar o código, evitar dívidas técnicas e divulgar o uso de métricas de código.
+
+O contexto da plataforma é descrito de forma resumida pelos seu desenvolvedores da seguinte forma:
+\begin{description}
+\item[Para] desenvolvedores de software
+\item[que] precisam de um melhor entendimento sobre o seu próprio código
+\item[o] Mezuro
+\item[é uma] rede social de nicho
+\item[que] fornece interpretação métrica colaborativa.
+\item[Ao contrário] CodeClimate
+\item[nosso projeto] atende várias linguagens, tem configurações abertas para avaliações de código e tudo isso de graça
+\end{description}
+
+De forma técnica o Mezuro é uma plataforma para analisar e compreender as métricas, bem como, aplicar os conceitos de código limpo, medição de software e atratividade do software livre. Ele é um software livre sob licença AGPL~\footnote{GNU Affero General Public License (AGPL): \url{gnu.org/licenses/agpl.html}}. Mezuro usa Kalibro Metrics , que é um serviço web que pode se conectar a diferentes tipos de repositórios de código-fonte , baixar projetos de software e executar muitos coletor métrica integrada e ferramentas de calculadora automaticamente. Kalibro é licenciado LGPL~\footnote{GNU Lesser General Public License (LGPL):\url{gnu.org/licenses/lgpl.html}}~\cite{mezuro2012}.
 É uma aplicação Web para que os líderes e desenvolvedores de projetos de software livre possam monitorar características de código-fonte, através de métricas de acoplamento, coesão, tamanho, encapsulamento, entre outras. Isso proporciona um acompanhamento do quanto o software está crescendo e se tornando mais complexo em relação a ele mesmo e à média dos projetos avaliados pelo Mezuro~\cite{santos2012}
 .
 
@@ -59,9 +74,41 @@ fornece um conjunto de ferramentas para análise e avaliação comparativa de pr
 
 \subsection{Mezuro Plugin}
 \label{mezuro-plugin}
+A primeira versão da ferramenta foi desenvolvida sendo uma instância da plataforma de rede social Noosfero 6 com o plugin Mezuro ativado. Noosfero é um software livre (plataforma web) para redes sociais que possui as funcionalidades de Blog, e-Portfolios, RSS, discussão temática e agenda de eventos em um único sistema. Ele foi desenvolvido em linguagem de programação Ruby usando o framework Rails. Ruby on Rails é baseado em arquitetura Model View Controller (MVC). Plugins Rails (como Mezuro plugin) é uma extensão do quadro principal, assim, a arquitetura Mezuro também foi baseada em MVC, seguindo Rails e a arquitetura do Noosfero~\cite{mezuro2012}.
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{figuras/arquitetura.eps}
+    \caption{Interação Mezuro e Kalibro Metrics}
+    \label{fig:arquitetura}
+  \end{center}
+\end{figure}
+
+A utilização de plugins permitem que os desenvolvedores possam resolver 
+vários problemas sem interagir com a base de código inteira. O Mezuro foi 
+o primeiro plugin do Noosfero, sua estrutura foi construída sobre um 
+paradigma baseado em eventos.O Noosfero dispara um evento em um 
+determinado ponto e todos os plugins interessados nesse evento são 
+capazes de agir. O Mezuro se comunica com o Kalibro Métricas Web Service, 
+como mostrado na Figura \ref{fig:arquitetura}, via solicitações SOAP, que 
+prove o acesso aos seguintes end-points do Kalibro Services: Kalibro,
+Project, ProjectResult, ModuleResult, BaseTool, Configuration, e 
+MetricConfiguration. Do ponto de vista conceitual, cada end-point Kalibro 
+é um serviço do Mezuro que funciona como um orquestrador dos sete 
+serviços, uma vez que cada um trabalha de forma independente e tem um 
+conjunto diferente de funcionalidades. O Mezuro chama cada end-point 
+(serviço ) de acordo com suas ações (pedidos) para o Kalibro. Em suma, o 
+desempenho e a escalabilidade do Mezuro dependem desta "orquestração".
+~\cite{mezuro2012}
 
 \subsection{Mezuro Standalone}
 \label{mezuro-standalone}
+
+O mezuro standalone surgiu da necessidade 
+Retirar do noosfero devido à limitação da comunidade, noosfero desenvolvido a versão do rails antiga com pouco suporte pela comunidade e limitado as funções dessa versão
+Portado para um plataforma independente baseada no framework rails 4.0.
+Design BootStrap
+Protocolo comunicação atual SOAP entre mezuro e kalibro porém possível mudança JSON.
 
 Seguindo as técnicas de usabilidade adotas, descrita na seção \ref{usabilidade-sl}, as tarefas de usabilidade a serem realizadas no projeto Mezuro serão:
 \begin{itemize}
