@@ -25,7 +25,7 @@ EDITAVEIS_FILES = $(addprefix $(EDITAVEIS_DIR)/, $(EDITAVEIS_SOURCES))
 
 CHAPTERS_DIR = capitulos
 CHAPTERS_SOURCES = 1-introducao.tex 2-software-livre.tex 3-metodos-ageis.tex \
-					4-usabilidade.tex 5-estudo-caso.tex
+					4-usabilidade.tex 5-estudo-caso.tex 6-consideracoes-finais.tex
 
 CHAPTERS_FILES = $(addprefix $(CHAPTERS_DIR)/, $(CHAPTERS_SOURCES))
 
@@ -54,7 +54,7 @@ $(TARGET): $(MAIN_FILE) $(SOURCES) bibliografia.bib
 clean:
 	rm -f *~ *.dvi *.ps *.backup *.aux *.log
 	rm -f *.lof *.lot *.bbl *.blg *.brf *.toc *.idx
-	rm -f tcc.pdf TCC_Daniel.pdf
+	rm -f tcc.pdf TCC_RenanCosta.pdf
 	rm -f *.synctex.gz
 	
 dist: clean
