@@ -167,46 +167,53 @@ Para tanto realizou-se uma revisão sistemática. A revisão sistemática é uma
 problema específico, de forma objetiva e reproduzível, por meio de método científico. Ela tem como princípios gerais a exaustão na busca dos estudos analisados, a seleção justificada dos estudos por critérios de inclusão e exclusão explícitos e a avaliação da qualidade metodológica, bem
 como a quantificação do efeito dos tratamentos por meio de técnicas estatísticas.\cite{de2000psiquiatria}
 
-O Objetivo da revisão sistemática era levantar as técnicas de usabilidade em projetos ágeis aplicadas no desenvolvimento de software livre. A busca foi realizada nas bibliotecas digitais Google Academic e Springer Link que possuem máquinas de busca com bom funcionamento e abrangência, além das bases de teses e dissertações da UnB e USP. nas Como resultado do trabalho levantou-se uma lista de técnicas e selecionadas aquelas que poderiam ser mais facilmente aplicadas em projetos de software livre.
+O Objetivo da revisão sistemática era levantar as técnicas de usabilidade em projetos ágeis aplicadas no desenvolvimento de software livre. A busca foi realizada nas bibliotecas digitais Google Academic e Springer Link que possuem máquinas de busca com bom funcionamento e abrangência, além das bases de teses e dissertações da UnB e USP. Como resultado do trabalho levantou-se uma lista de técnicas e foram selecionadas 5 das que mais poderiam ser facilmente aplicadas em projetos de software livre e evidênciadas abaixo.
+
+\begin{enumerate}
+%
+\item Santos e Kon (\citeyear{santoskon2009}) propõe a aplicação do próprio processo de DCU (Design Centrado no Usuário) para levantamento dos usuários e do contexto de uso da metodologia. Os usuários do processo são membros de equipes de software livre, que desejam inserir práticas de usabilidade no processo de desenvolvimento. O contexto de uso são sistemas distribuídos geograficamente, com pessoas trabalhando colaborativamente. Os métodos podem ser aplicados tanto para o início de novos projetos, que tenham como usuários, pessoas não acostumadas a sistemas livres ou mesmo para a melhoria de sistemas existentes, com respeito à usabilidade.
 
 %
-Santos e Kon (\citeyear{santoskon2009}) propõe a aplicação do próprio processo de DCU (Design Centrado no Usuário) para levantamento dos usuários e do contexto de uso da metodologia. Os usuários do processo são membros de equipes de software livre, que desejam inserir práticas de usabilidade no processo de desenvolvimento. O contexto de uso são sistemas distribuídos geograficamente, com pessoas trabalhando colaborativamente. Os métodos podem ser aplicados tanto para o início de novos projetos, que tenham como usuários, pessoas não acostumadas a sistemas livres ou mesmo para a melhoria de sistemas existentes, com respeito à usabilidade.
-
-%
-Já Lee, Judge e McCrickard (\citeyear{lee2011}) defendem a aplicação de definição de histórias de usuário de usabilidade dirigidas pela decisão do responsável por design realizando a prototipação dessas histórias e depois sendo validadas através de testes de usabilidade conforme Figura \ref{fig:figuraCDR}.
+\item Já Lee, Judge e McCrickard (\citeyear{lee2011}) defendem a aplicação de definição de histórias de usuário de usabilidade dirigidas pela decisão do responsável por design realizando a prototipação dessas histórias e depois sendo validadas através de testes de usabilidade conforme Figura \ref{fig:figuraCDR}.
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=0.5\textwidth]{figuras/figuraCDR.eps}
+    \includegraphics[width=0.5\textwidth]{figuras/figuraCDRBR.eps}
     \caption{Ciclo de atividades de usabilidade}
     \label{fig:figuraCDR}
   \end{center}
 \end{figure}
 
 %
-As atividades de usabilidade seguem o modelo de ciclo de vida das outras atividades dentro do desenvolvimento ágil com a diferença que o ciclo de usabilidade tem sua iteração primeiro que as outras atividades de desenvolvimento conforme Figura \ref{fig:figuraCDR2}:
+\item As atividades de usabilidade seguem o modelo de ciclo de vida das outras atividades dentro do desenvolvimento ágil com a diferença que o ciclo de usabilidade tem sua iteração primeiro que as outras atividades de desenvolvimento conforme Figura \ref{fig:figuraCDR2}:
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=0.5\textwidth]{figuras/figuraCDR2.eps}
+    \includegraphics[width=0.5\textwidth]{figuras/FiguraTraducao1Color.eps}
     \caption{Ciclo das tarefas de usabilidade x desenvolvimento}
     \label{fig:figuraCDR2}
   \end{center}
 \end{figure}
 
 %
-Santos (\citeyear{santos2012}) em uma nova pesquisa aplicada propôs a aplicação das técnicas de usabilidade de acordo com as fases do DCU, conforme a descrição das técnicas de usabilidade das comunidades de métodos ágeis e de software livre. Para a fase do DCU Criar soluções de design, não foram identificadas propostas de adaptações, sendo portanto, descritas propostas para as fases: Identificar necessidades para design centrado em humano, Especificar contexto de uso, Especificar requisitos e Avaliar Designs conforme Figura \ref{fig:figuraDCU}.
+\item Santos (\citeyear{santos2012}) em uma nova pesquisa aplicada propôs a aplicação das técnicas de usabilidade de acordo com as fases do DCU, conforme a descrição das técnicas de usabilidade das comunidades de métodos ágeis e de software livre. Para a fase do DCU Criar soluções de design, não foram identificadas propostas de adaptações, sendo portanto, descritas propostas para as fases: Identificar necessidades para design centrado em humano, Especificar contexto de uso, Especificar requisitos e Avaliar Designs conforme tabela \ref{tabela-usabilidade-sl1}.
 
-\begin{figure}[H]
-  \begin{center}
-    \includegraphics[width=0.7\textwidth]{figuras/figuraDCU.eps}
-    \caption{Técnicas de usabilidade baseado no DCU}
-    \label{fig:figuraDCU}
-  \end{center}
-\end{figure}
+\begin{table}[h]
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Práticas de usabilidade para Software Livre}}                                                                                                                                                                          \\ \hline
+\textbf{Fases DCU}                                                                                 & \textbf{Práticas de Usabilidade}                                                                                                 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Identificar necessidades para \\ design centrado em humano\end{tabular} & \begin{tabular}[c]{@{}c@{}}Equipe-Núcleo como Donos do Produto\\ Caminhos Completos\\ Especialista-generalista\end{tabular}      \\ \hline
+Especificar contexto de uso                                                                        & Pouco design antecipado e distribuído                                                                                            \\ \hline
+Especificar Requisitos                                                                             & Definir metas de usabilidade automáticas                                                                                         \\ \hline
+Avaliar designs                                                                                    & \begin{tabular}[c]{@{}c@{}}RITE (Rapid Iterative Testing and Evaluation)  \\ para desenvolvedores de software livre\end{tabular} \\ \hline
+\end{tabular}
+\caption{Práticas de usabilidade no contexto de Software Livre}	
+\label{tabela-usabilidade-sl1}
+\end{table}
 
 %
-Moreno e Yagüe (\citeyear{moreno2012}) trás em seu trabalho a inserção da usabilidade por meio da criação de User Stories de usabilidade que denominam de \textit{Usability Stories}. Tendo que especificar os recursos funcionais de usabilidade que serão utilizados no projeto, o artigo trás um tabela que é necessária para definir as características dessa funcionalidade.
+\item Moreno e Yagüe (\citeyear{moreno2012}) trás em seu trabalho a inserção da usabilidade por meio da criação de User Stories de usabilidade que denominam de \textit{Usability Stories}. Tendo que especificar os recursos funcionais de usabilidade que serão utilizados no projeto, o artigo trás um tabela que é necessária para definir as características dessa funcionalidade.
 
 \begin{table}[H]
 \begin{tabular}{|l|l|}
@@ -256,7 +263,13 @@ Ajuda Multinível                                                       &       
 \caption{Mapeamento entre os mecanismos de usabilidade e ações}
 \label{tabela-map}
 \end{table}
+\end{enumerate}
 
+%
+O levantamento de técnicas de usabilidade da comunidade de métodos ágeis, técnicas
+de usabilidade ágil, e das técnicas de usabilidade da comunidade de software livre, foi
+realizado com o objetivo de refletir como técnicas de usabilidade poderiam ser aplicadas
+em comunidades de software livre. E essa lista possibilitou uma escolha da técnica que melhor se adequa ao estudo de casa de acordo com as características de cada uma encontrada na revisão sistemática. O trabalho completo da revisão sistemática pode ser encontrado na seção \ref{ap-revisao-sistematica} no apêndice do TCC.
 
 \section{Usabilidade em Software Livre}
 \label{usabilidade-sl}
@@ -284,91 +297,19 @@ Avaliar designs                                                                 
 \label{tabela-usabilidade-sl}
 \end{table}
 
-As práticas são descritas por ela apresentando um contexto, um problema e uma solução visando a adequação a comunidades de software livre.
+As práticas são descritas apresentando um contexto, um problema e uma solução visando a adequação a comunidades de software livre. Cada fase do DCU tem como objetivo: 
 
-\textbf{Identificar necessidades para design centrado em humano}
+\begin{description}
+\item[Identificar necessidades para design centrado em humano] Trazer o DCU para dentro da equipe-núcleo do projeto, tendo um responsável para assumir o papel de Proprietário do Produto,além da equipe-núcleo realizar o levantamento dos usuários, necessidades e o contexto do sistema e assumir o ciclo completo de DCU sem pararelismo com uma equipe externa de usabilidade;
+\item[Especificar contexto de uso] Levar a equipe-núcleo a responsabilidade de especificar as práticas de usabilidade a serem utilizadas no contexto de uso do sistema;
+\item[Especificar requisitos] Realizar a escrita de testes de aceitação automáticos baseados em BDD (\textit{Behavior Driven Development});
+\item[Avaliar designs] Aplicação do método RITE (Rapid Iterative Testing and Evaluation) pela equipe-núcleo do projeto, sem necessidade de laboratórios de usabilidade podendo ser substituído por um acompanhamento da utilização dos usuários de um pequeno conjunto de funcionalidades.
+\end{description}
 
-\textbf{Equipe-Núcleo como Donos do Produto}
-
-Contexto: Equipe de desenvolvimento de software livre composta por desenvolvedores e que não possui especialistas em usabilidade ou UX como membros. Contudo, a equipe-núcleo do projeto percebe a necessidade de compreender melhor os requisitos de negócios e de usabilidade, levando em consideração a visão de clientes e usuários típicos.
-Problema: Integrar requisitos de negócio com requisitos de usabilidade em um ambiente que não possui especialistas em usabilidade. Principais forças envolvidas:
-\begin{itemize}
-\item Força 1: Necessidade de levantamento de requisitos de negócios com clientes e requisitos de usabilidade com usuários típicos, de modo a integrá-los para o desenvolvimento do sistema.
-\item Força 2: Não existe garantia de que especialistas em usabilidade ou UX participarão voluntariamente do projeto e/ou não é possível contratá-los. Também não é possível garantir que desenvolvedores voluntários queiram participar dessas atividades.
-\end{itemize}
-Solução: Uma adaptação da prática Especialistas em UX como Donos do Produto, da comunidade de métodos ágeis, na qual a equipe-núcleo de um projeto de software livre assumiria o papel de Proprietários do Produto, que levam em consideração a usabilidade do sistema. Dessa forma, podem controlar as contribuições para o projeto, com a visão das necessidades de usuários típicos e clientes.
+A descrição completa dessas práticas pode ser encontrada na seção \ref{ap-praticas-usabilidade} no apêndice do TCC. Esta foi retirada da tese de mestrado da Ana Paula Oliveira dos Santos e removido os exemplos aplicados em projetos realizados em sua tese. 
 
 %
-\textbf{Caminhos Completos}
-
-Contexto: Equipe de desenvolvimento de software livre composta por desenvolvedores e que não possui especialistas em usabilidade ou UX como membros. Contudo, a equipe-núcleo do projeto precisa empregar práticas de usabilidade durante o desenvolvimento do sistema.
-Problema: Realizar práticas de usabilidade em projetos de software livre que não possuem especialistas em usabilidade ou UX. Principais forças envolvidas:
-\begin{itemize}
-\item Força 1: Necessidade de realizar práticas de usabilidade para pesquisa de usuários, levanta- mento de requisitos e metas de usabilidade, definição de design e avaliações com usuários e clientes.
-\item Força 2: Não existe garantia de que especialistas em usabilidade ou UX participarão voluntariamente do projeto e/ou não é possível contratá-los.
-\item Força 3: Desenvolvimento distribuído e participação esporádica de membros.
-\end{itemize}
-Solução: Em vez de caminhos paralelos entre equipe de desenvolvimento e de UX, como ocorre na prática Caminhos paralelos da comunidade de métodos ágeis, a equipe de desenvolvimento executa o ciclo completo de DCU para um conjunto específico de funcionalidades, utilizando-se de Pouco design antecipado ou Pouco design antecipado e distribuído para coletar informações. A prática pode ser executada apenas pela equipe-núcleo do projeto ou mesmo com a participação dos demais contribuidores que desejem participar.
-
-%
-\textbf{Especialista-generalista}
-
-Contexto: Equipes de desenvolvimento de software livre, que não possuem especialistas em usabilidade ou UX como membros do time, compostas por desenvolvedores que desejam desenvolver sistemas com melhor usabilidade para usuários típicos.
-Problema: Ausência de especialistas em usabilidade ou UX na equipe de desenvolvimento do projeto. Principais forças envolvidas:
-\begin{itemize}
-\item Força 1: Não existe garantia de que especialistas em usabilidade ou UX participarão voluntariamente do projeto e/ou não é possível contratá-los.
-\item Força 2: Desenvolvimento distribuído e participação esporádica de membros.
-\end{itemize}
-Solução: Os desenvolvedores da equipe-núcleo do projeto aplicam práticas de usabilidade para entender quem são os usuários típicos do sistema, quais são as suas necessidades e em que contexto o sistema seria utilizado, de modo a incluir essas considerações nos requisitos da aplicação. As pesquisas têm baixa granularidade, ou seja, realiza-se apenas o necessário para o entendimento das funcionalidades da próxima iteração. Os requisitos podem ser definidos por meio da escrita de cartões de histórias de usuários, que são validados com o cliente conforme ocorre em comunidades de métodos ágeis. A documentação detalhada dos requisitos pode ser encontrada nos testes de aceitação, que podem ser acessados por qualquer desenvolvedor do sistema, conforme a prática Testes de aceitação de comunidades de métodos ágeis, o que mantém um relatório atualizado das funcionalidades do sistema que atendem ao comportamento esperado. As metas de usabilidade do sistema também podem ser descritas por meio da proposta de prática Definir metas de usabilidade automáticas.
-
-
-%
-\textbf{Especificar contexto de uso}
-
-\textbf{Pouco design antecipado e distribuído}
-
-Contexto: Equipe de desenvolvimento de software livre composta por desenvolvedores e que não possui especialistas em usabilidade ou UX como membros. Membros da equipe-núcleo do projeto e contribuidores encontram-se distribuídos em diversas localidades. Contudo, existe a necessidade de realização de pesquisas presenciais com usuários típicos para melhor compreensão do contexto de uso do sistema.
-Problema: Utilizar práticas de usabilidade, em ambiente de desenvolvimento de software livre, para especificar contexto de uso de um sistema, onde membros da equipe estão dispersos em vários locais diferentes. Principais forças envolvidas:
-\begin{itemize}
-\item Força 1: Distância física entre membros de uma comunidade de desenvolvimento de software livre.
-\item Força 2: Necessidade de realização de pesquisas de usabilidade para definição de perfil de usuários típicos e o contexto de uso do sistema.
-\item Força 3: Possibilitar a participação de voluntários de diversas culturas.
-\end{itemize}
-Solução: Equipe-núcleo do projeto é responsável por definir quais são as práticas de usabilidade a serem utilizadas para especificação do contexto de uso de um sistema e também por realizar as práticas presenciais na sua cidade. Membros da equipe, que se encontram dispersos em locais distintos, poderiam aplicar a mesma prática em sua localidade, de modo a obter feedback de usuários com culturas diferentes; por exemplo, replicando testes, sessões de grupos focais ou entrevistas presenciais, em sua região ou país. Desse modo, possibilita-se a obtenção da percepção cultural de vários locais distintos, de modo a explorar o contexto de projetos abertos, no qual podem existir desenvolvedores, usuários, membros da equipe-núcleo e contribuidores em diversas localidades.
-
-
-%
-\textbf{Especificar requisitos}
-
-\textbf{Definir metas de usabilidade automáticas}
-
-Contexto: Desenvolvimento aberto, distribuído e colaborativo, onde desenvolvedores podem entrar e sair do projeto durante o processo de desenvolvimento. Também não existe uma equipe de usabilidade trabalhando em conjunto com a equipe de desenvolvimento.
-Problema: Definir metas de usabilidade de modo que todos os desenvolvedores que contribuam com um projeto aberto possam conhecer as metas definidas. Principais forças envolvidas:
-\begin{itemize}
-\item Força 1: Necessidade de definição de metas de usabilidade que atendam às necessidades de usuários típicos.
-\item Força 2: Possibilitar que todos os desenvolvedores tenham contato diário com as metas de usabilidade definidas
-\item Força 3: Desenvolvimento distribuído e participação esporádica de membros.
-\item Força 4: Manter documentação atualizada das metas de usabilidade tratadas pelo sistema.
-\end{itemize}
-Solução: Escrita de testes de aceitação automáticos baseados em Behaviour Driven Development
-(BDD) para definição de metas de usabilidade. Para o contexto de desenvolvimento livre, seria mais eficiente escrever as metas de usabilidade diretamente no ambiente de desenvolvimento do que em documentos separados, que correm o risco de não serem lidos. Sendo assim, conforme grupos de funcionalidades são selecionados para desenvolvimento, descreve-se as metas de usabilidade que precisam ser cumpridas para essas funcionalidades. Membros da equipe-núcleo do projeto podem escrever testes de aceitação automáticos, envolvendo usuários típicos e/ou clientes, o que possibilita documentar o comportamento esperado para a funcionalidade, e também gerar um relatório do funcionamento do sistema, exibindo quais funcionalidades e quais cenários são implementados de acordo com as necessidades dos usuários reais.
-
-
-%
-\textbf{Avaliar designs}
-
-\textbf{RITE (Rapid Iterative Testing and Evaluation)  para desenvolvedores de software livre}
-
-Contexto: Equipes de desenvolvimento de software livre que não possuem especialistas em usabilidade ou UX como membros do time, mas que tem a necessidade de realizar testes de usabilidade com usuários típicos do sistema de modo a desenvolver sistemas com melhor usabilidade.
-Problema: Possibilitar a identificação e correção de problemas de usabilidade no menor tempo possível durante o desenvolvimento de software livre. Principais forças envolvidas:
-\begin{itemize}
-\item Força 1: Diminuir a distância entre a identificação e a correção de problemas de usabilidade encontrados em testes com usuários.
-\item Força 2: Não existe garantia de que especialistas em usabilidade ou UX participarão voluntariamente do projeto e/ou não é possível contratá-los.
-\end{itemize}
-Solução: O método RITE pode ser aplicado por membros da equipe-núcleo do projeto, não sendo
-necessário utilizar laboratórios de usabilidade com a aplicação de testes formais. Os desenvolvedores da equipe-núcleo podem observar os usuários utilizando um pequeno conjunto de funcionalidades do sistema e solicitar que falem em voz alta o que estão pensando, enquanto o utilizam (Protocolo Pensando em voz alta). Não seria necessária a criação de relatórios e análises de vídeo dos testes, pois os desenvolvedores que estarão envolvidos na correção dos problemas encontrados podem participar do teste como moderadores ou observadores, de modo que possam obter o conhecimento das melhorias necessárias que precisam ser implementadas. Para documentar problemas referentes a um comportamento esperado do sistema, os testes de aceitação automáticos, utilizados pela comunidade de métodos ágeis, podem servir como forma de documentação, como também, para verificar se o sistema está realizando a tarefa do modo que se espera. Nesse caso, o relatório de teste de usabilidade seria substituído por testes de aceitação automáticos. A criação dos testes de aceitação, nesse caso, seria feita pelos próprios desenvolvedores que participaram do teste e conhecem o problema a ser resolvido. Um breve brainstorm após a sessão de teste serviria para consolidar as impressões dos membros da equipe envolvidos, possibilitando definir como os problemas serão corrigidos. A correção dos problemas encontrados seria realizada na sequência da realização do teste. Dessa forma, os testes de aceitação serviriam para registrar como corrigir um problema de usabilidade, detectado no teste com usuários típicos, para um determinado cenário de uso do sistema.
-
-Assumindo as práticas descritas ao estudo de caso Mezuro, o ciclo de vida e aplicação destas na comunidade de software livre será seguido dentro do projeto, junto com a equipe de desenvolvimento, visando suprir as deficiências e problemas citados no capítulo \ref{cap-introducao}.
+Assumindo as práticas descritas ao estudo de caso Mezuro, o ciclo de vida e aplicação destas na comunidade de software livre serão seguidos dentro do projeto junto com a equipe de desenvolvimento, visando suprir as deficiências e problemas citados no capítulo \ref{cap-introducao}.
 
 \section{Métodos de Avaliação}
 \label{metodos-avaliacao}
@@ -387,9 +328,9 @@ assunto~\cite{cybis2010}.
 Para utilização de uma avaliação heurística serão definidos os graus de
 severidade. A severidade do problema de usabilidade é uma combinação de três fatores:
 \begin{itemize}
-\item A frequência com que ocorre o problema : é comum ou raro?
-\item O impacto do problema caso ocorra : Será que vai ser fácil ou difícil para os usuários a superar ?
-\item A persistência do problema: É um problema que com o tempo os usuários possam superar , uma vez que sabe sobre ele ou os usuários repetidamente serão incomodados pelo problema ?
+\item A frequência com que ocorre o problema: é comum ou raro?
+\item O impacto do problema caso ocorra: Será que vai ser fácil ou difícil para os usuários a superar ?
+\item A persistência do problema: É um problema que com o tempo os usuários possam superar, uma vez que sabe sobre ele ou os usuários repetidamente serão incomodados pelo problema ?
 \end{itemize}
 
 A escala de classificação seguinte de 0 a 4 pode ser usada para avaliar a severidade dos problemas de usabilidade:~\cite{nielsen1995severity}:
