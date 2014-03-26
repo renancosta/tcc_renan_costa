@@ -1,0 +1,80 @@
+Renan Costa - TCC 1
+===================
+
+Aplicando técnicas ágeis de usabilidade em projetos de software livre: um estudo de caso para o projeto Mezuro
+
+início: 14:08 - 14:29
+
+=====================
+
+* Mérito da proposta (5) = 9,5 => 47,5
+* Qualidade do relatório (3) = 7 => 21
+* Apresentação (2) = 9 => 18
+
+* Mensão final = MS (8,7)
+
+=====================
+
+Paulo
+-----
+
+- falou muito de usabilidade com o slide de software livre ao fundo
+- cadê os resultados da revisão sistemática na apresentação?
+- Ruby 1.8 e Rails 2.3.5 -> Ruby 2.0 e Rails 4.0
+
+
+Maurício
+--------
+
+- Interessante trazer questões de requisitos não-funcionais
+- Não trouxe um capítulo de proposta: precisa de um capítulo de proposta claro
+- Revisão sistemática: não está no texto -- Ter colocado como anexo
+- Texto ficou um pouco confuso
+- Trecho da wikipédia (scrum)
+- Textos com tradução: não interpretação
+- Faltou citar explicitamente as traduções
+- Muitos trecho não são com suas palavras
+- Manifesto ágil extraído da referência
+- Tabela extraídas da referência
+- Apêndice com os estudos da Ana Paula
+- Qual a técnica usada?
+- Protótipos não foram explicados
+- Explicitar a sua interação
+- O que o check-list? Por que ficou melhor? Capítulo para explicar sua interação
+- Não está sistematizado no texto como replicar
+- Escrever um capítulo da primeira iteração
+- Não usou a palavra requisito não-funcional
+- Como "bolaram" os check-list?
+- Se coloca no TCC como um usuário: não interessa como fez o check-list? O check-list é adequado?
+- NFR framework: mostra como trabalhar com requisitos não-funcionais
+- Como trabalhar com requisitos não-funcionais não clássicas
+
+André
+-----
+- É um modelo que você está propondo para software livre?
+- sistematizar - apresentar como modelo
+- Lista de abreviatura de lista deve ser em ordem alfabética
+- Explica siglas na primeira vez
+- referência sobre SL ter baixa usabilidade
+- Manifesto tem que ser referencia na data de criação
+- Traduzir palavras em inglês
+- Trabalho não está conduzindo o leitor
+- Situar o contexto: o que vai acontecer no TCC 2?
+- Onde encontra a viabilidade do estado do sistema
+- Compensa colocar todos os termos dentro do texto? Pode citar e explicar baseado na tabela
+- procurar definição sobre tabela, quadro e figura
+- figuras estão em inglês: traduzir e referenciar ou criar uma nova figura
+- Não ligação de um conteúdo com o outro
+- Explicar o formato do Agile Inception
+- Prepara o leitor sobre a quantidade de plataformas correlatas
+- Falta conclusão sobre os trabalhos correlatos
+- Como ele irá fazer as avaliações
+- Definiu algo para os usuários novatos: avaliação deve considerar isso 
+- Referência bibliográficas incorretas: revisar
+- Cronograma: item 3 não foi feito?
+- Qual o método?
+- Ver trabalho do Rafael da Mata
+- Explicar melhor o brasileiro
+- EMEG - Padrão brasileiro de acessibilidade
+- Internacionalização: não será trabalhado nessa versão do projeto?
+
